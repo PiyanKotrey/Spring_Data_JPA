@@ -1,0 +1,2 @@
+queries:
+  findUserByName: SELECT u FROM users u WHERE u.name = :name
