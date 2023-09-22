@@ -2,7 +2,9 @@ package com.example.spring_jpa.assembler;
 
 import com.example.spring_jpa.controller.ProductController;
 import com.example.spring_jpa.dto.ProductDto;
+import com.example.spring_jpa.dto.TeacherDto;
 import com.example.spring_jpa.entity.Product;
+import com.example.spring_jpa.entity.Teacher;
 import com.example.spring_jpa.mapper.ProductMapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,4 +45,5 @@ public class ProductModelAssembler extends RepresentationModelAssemblerSupport<P
     public CollectionModel<EntityModel<ProductDto>> toCollectionModel(Iterable<? extends Product> entities) {
         return super.toCollectionModel(entities);
     }
+
 }
